@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Tags Cheat Sheet</title>
+  </head>
+  <body>
+    <h1 id="top-of-page">My HTML Tags Cheat Sheet</h1>
+
+    <h2 id="contents">Contents</h2>
+    <ul>
+      <li>
+        <a href="#headings">headings</a>
+      </li>
+      <li>
+        <a href="#paragraphs">paragraphs</a>
+      </li>
+      <li>
+        <a href="#lists">lists<ul>
+            <li>
+                <a href="#unordered-lists">unordered lists</a>
+            </li>
+            <li>
+                <a href="#ordered-lists">ordered lists</a>
+            </li>
+        </ul></a>
+      </li>
+      <li>
+        <a href="#anchors">anchors (links)</a>
+      </li>
+      <li>
+        <a href="#text-emphasis">text emphasis</a>
+      </li>
+      <li>
+        <a href="#div-and-span">div and span</a>
+      </li>
+      <li>
+        <a href="#linebreaks">linebreaks</a>
+      </li>
+    </ul>
+
+    <h2 id="headings">Headings</h2>
+        <p>
+        Headings from `<code>h1</code>` to `<code>h6</code>` identify blocks and
+        sections. Every page should have one `<code>h1</code>`. While technically
+        not required, it is important for SEO.
+        </p>
+
+    <h2 id="paragraphs">Paragraphs</h2>
+        <p>Paragraphs of text go into `<code>p</code>` tags.</p>
+
+    <h2 id="lists">Lists</h2>
+        <h3 id="unordered-lists">Unordered Lists</h3>
+            <p>
+            Unordered lists are marked with bullet points and go in `<code>ul</code>`
+            tags. Each list item goes in an `<code>li</code>` tag.
+            </p>
+            <h4>Types of lists:</h4>
+            <ul>
+            <li>Unordered lists (`<code>ul</code>`)</li>
+            <li>Ordered lists (`<code>ol</code>`)</li>
+            </ul>
+        <h3 id="ordered-lists">Ordered Lists</h3>
+            <p>
+            Ordered lists are numbered and go in `<code>ol</code>` tags. Each list
+            item goes in `<code>ol</code>` tags. Each list item goes in an
+            `<code>li</code>` tag.
+            </p>
+            <h4>Polya's Problem Solving Framework</h4>
+                <ol>
+                <li>Understand the problem</li>
+                <li>Come up with a plan</li>
+                <li>Carry out the plan</li>
+                <li>Go back and improve your solution</li>
+                </ol>
+
+    <h2 id="anchors">Anchors (i.e. links)</h2>
+        <p>
+        Anchor tags create links to other pages. The URL goes in the
+        `<code>href</code>` attribute.
+        <a href="https://duckduckgo.com">
+            Go to DuckDuckGo to search for more information.
+        </a>
+        </p>
+        <p>
+        Setting `<code>target="_blank"</code>` will open the link in a new window.
+        See
+        <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a"
+            target="_blank"
+        >
+            MDN
+        </a>
+        for more details.
+        </p>
+        <p>
+        Anchor tags can also create links to a new location on the same page.
+        Instead of putting a URL in the `<code>href</code>` attribute, just use
+        the `<code>id</code>` of the element you want to navigate to with a
+        `<code>#</code>` at the start. This allows you to
+        <a href="#top-of-page"> jump to the top of the page. </a>
+        </p>
+
+    <h2 id="text-emphasis">Text Emphasis</h2>
+        <h3>Italic</h3>
+            <em>
+            The `<code>em</code>` element adds extra emphasis to the text within the
+            opening and closing tags. This shows up as italic text in most browsers.
+            </em>
+        <h3>Bold</h3>
+            <strong>
+            You can also use the `<code>strong</code>` element to emphasize text. This
+            shows up as bold text in most browsers.
+            </strong>
+        <h3>Code</h3>
+            <code>
+            You can also use the `code` element to differentiate that certain text is
+            to be interpreted as a block of code. These blocks can be styled by css
+            but in most browsers by default will show in a specific monospaced font.
+            It is common to style these blocks such that the background ia different
+            colour to regular text.
+            </code>
+
+    <h2 id="div-and-span">
+      Organizing Content with `<code>div</code>` and `<code>span</code>`
+    </h2>
+        <h3>`<code>div</code>`</h3>
+            <p>
+            The `<code>div</code>` element is a block element, so each
+            `<code>div</code>` wil show up on a new line.
+            </p>
+            <div>1st div</div>
+            <div>2nd div</div>
+            <div>3rd div</div>
+            <h3>`<code>span</code>`</h3>
+            <p>
+            The `<code>span</code>` element is an inline element, so there will be no
+            line break in between each `<code>span</code>`
+            </p>
+            <span>1st span</span>
+            <span>2nd span</span>
+            <span>3rd span</span>
+
+    <h2 id="linebreaks">Breaking text using the `<code>br</code>` tag</h2>
+        <p>
+        You can also use the `<code>br</code>` tag to create a line break
+        deliberately. Unlike many other tags it is a single tag without a matching
+        closing tag. It is used equivalently to how you would use a newline
+        character (`<code>\n</code>`) in other code.
+        </p>
+        <p>
+        Coding Takes Effort <br />
+        A lot of tediousness <br />
+        But is rewarding <br />
+        </p>
+  </body>
+</html>
